@@ -3,7 +3,6 @@
   <div class="row">
     <div class="col-md-6">
       <div class="contact-container">
-        <h1>Contact</h1>
 <div class="form-container">
           <form action="https://formspree.io/f/xgegvewy" method="POST" class="float start">
             <h4>Get in Touch</h4>
@@ -58,7 +57,7 @@ export default {};
 
 <style scoped>
 .bg-body {
-  background-color: #60ce0c; /* Set your desired background color */
+  background-color: #60ce0c; 
 }
 .contact-container {
   text-align: center;

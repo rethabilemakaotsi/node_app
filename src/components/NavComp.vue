@@ -45,6 +45,9 @@ export default {
   #logo{
     width: 10%;
   }
+  .nav-item{
+    font-size: larger;
+  }
 </style>
 
 
