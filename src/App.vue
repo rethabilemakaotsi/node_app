@@ -1,10 +1,24 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
+
+  <navComp/>
+  <SpinnerComp/>
   <router-view/>
+  <FooterComp/>
 </template>
+
+<script>
+import FooterComp from './components/FooterComp.vue';
+import navComp from './components/NavComp.vue';
+import SpinnerComp from './components/SpinnerComp.vue'
+export default {
+  components: {
+    navComp,
+    FooterComp,
+    SpinnerComp,
+}
+}
+
+</script>
 
 <style>
 #app {
