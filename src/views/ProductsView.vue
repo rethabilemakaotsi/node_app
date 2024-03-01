@@ -1,17 +1,19 @@
 <template>
+    <body>
+        
     <div class="container">
         <div class="row">
-            <div class="col">
+            <div class="col-5 mt-4">
                 <input type="text" v-model="searchQuery" placeholder="Search product by name" class="form-control">
             </div>
-            <div class="col">
+            <div class="col-2 mt-4">
                 <button class="btn btn-sm btn-custom" @click="toggleSortOrder">Sorting by price</button>
             </div>
         </div>
-        <div class="row" v-if="products">
+        <div class="row gap-5 justify-content-center m-3" v-if="products">
             <Card v-for="product in filteredProducts" :key="product.prodID">
                 <template #cardHeader>
-                    <img :src="product.ProdUrl" class="car-img-top" alt="">
+                    <img :src="product.ProdUrl" class="car-img-top" alt="" height="200">
                     <h4 class="card-title">{{ product.prodName }}</h4>
                 </template>
                 <template #cardBody>
@@ -29,6 +31,8 @@
             <p class="lead">Loading</p>
         </div>
     </div>
+</body>
+
 </template>
 
 <script>
@@ -79,7 +83,13 @@ export default {
     color: white;
 } */
 .btn-custom {
-    background-color: #918e8e;
+    background-color: #885b19;
     color: white;
+}
+.col-5{
+    margin-right: 40%;
+}
+body{
+    background-color: #918e8e;
 }
 </style>

@@ -173,7 +173,7 @@ export default createStore({
     async fetchProducts(context) {
       try{
         let {results} = 
-        (await axios.get(`${RandURL}` + `products`)).data
+        (await axios.get(`${RandURL}products`)).data
         if(results) {
           context.commit('setProducts', results)
         }
@@ -188,8 +188,7 @@ export default createStore({
     },
     async fetchProduct(context, payload) {
       try{
-        let {result} = (await axios.get(`${RandURL}
-        products/${payload.id}`)).data
+        let {result} = await (await axios.get(`${RandURL}products/${payload.id}`)).data
         if(result) {
           context.commit('setProduct', result)
         }else {
@@ -203,13 +202,15 @@ export default createStore({
       }catch(e) {
         sweet({
           title: 'Error',
-          text: 'An product was not found.',
+          text: e.message,
           icon: "error",
           timer: 2000
         }) 
       }
     }
   },
+
+  
   modules: {
   }
 })

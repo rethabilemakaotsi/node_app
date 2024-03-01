@@ -9,12 +9,16 @@
                   <h4 class="card-title">{{ product.prodName }}</h4>
               </template>
               <template #cardBody>
+                    <div>
+                        <img class="img-fluid" :src="product.ProdUrl" :alt="product.prodName"/>
+                    </div>
                   <p class="card-text text-dark bg-gradient bg-dark-subtle p-2">
-                      Quantity: {{ product.prodQuantity }}
+                     {{ product.ProdDescription }}
                   </p>
-                  <p class="card-text text-dark bg-gradient bg-dark-subtle p-2">
+                  
+                  <!-- <p class="card-text text-dark bg-gradient bg-dark-subtle p-2">
                       Amount: R{{ product.prodAmount }}
-                  </p>
+                  </p> -->
               </template>
           </Card>
       </div>

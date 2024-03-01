@@ -1,7 +1,7 @@
 <template>
-    <div>
-      <h1>Add User</h1>
-      <form @submit.prevent="AddUser">
+    <!-- <div> -->
+      <!-- <h1>Add User</h1> -->
+      <!-- <form @submit.prevent="AddUser">
         <input type="text" v-model="userID" placeholder="UserID">
         <input type="text" v-model="firstName" placeholder="firstName">
         <input type="text" v-model="lastName" placeholder="lastName">
@@ -10,8 +10,8 @@
         <input type="text" v-model="Password" placeholder="Password">
         <input type="" v-model="Role" placeholder="Role">
         <button type="submit">Add User</button>
-      </form>
-      <h1>Users</h1>
+      </form> -->
+      <!-- <h1>Users</h1>
       <table>
         <thead>
           <tr>
@@ -38,9 +38,8 @@
           </tr>
         </tbody>
       </table>
-    </div>
+    </div> -->
   </template>
-  
   <script>
   export default {
     data() {
@@ -92,7 +91,5 @@
     }
   };
   </script>
-  
   <style scoped>
   </style>
-  

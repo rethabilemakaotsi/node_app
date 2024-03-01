@@ -2,6 +2,7 @@
 
   <navComp/>
   <SpinnerComp/>
+  <AddUserComp/>
   <router-view/>
   <FooterComp/>
 </template>
@@ -10,11 +11,14 @@
 import FooterComp from './components/FooterComp.vue';
 import navComp from './components/NavComp.vue';
 import SpinnerComp from './components/SpinnerComp.vue'
+import AddUserComp from './components/AddUserComp.vue';
 export default {
   components: {
     navComp,
     FooterComp,
     SpinnerComp,
+    AddUserComp,
+
 }
 }
 

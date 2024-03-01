@@ -9,9 +9,16 @@
           <p class="Abt-text display-6">Welcome to our poetry emporium,</p>
           <p>Where the timeless words of renowned poets find a home. At our virtual shelves, we    proudly showcase the works of some of history's most influential wordsmiths, each poem a testament to the human experience, capturing emotions, stories, and perspectives that transcend time and culture.
           </p>
-          <span class="">Where the timeless words of renowned poets find a home. At our virtual shelves, we    proudly showcase the works of some of history's most influential wordsmiths, each poem a testament to the human experience, capturing emotions, stories, and perspectives that transcend time and culture.</span>
+          <span class="">
+In our digital sanctuary, verses dance and sing,
+Echoes of passion, pain, and everything between.
+From Sylvia Plath to Dickinson's quiet grace,
+Each stanza a window to the soul's deepest space.
+
+Come wander through our virtual halls, where poets roam,
+Where the timeless words of renowned poets find a home.</span>
           
-          <p>Where the timeless words of renowned poets find a home. At our virtual shelves, we    proudly showcase the works of some of history's most influential wordsmiths, each poem a testament to the human experience, capturing emotions, stories, and perspectives that transcend time and culture.</p>
+          <!-- <p>Where the timeless words of renowned poets find a home. At our virtual shelves, we    proudly showcase the works of some of history's most influential wordsmiths, each poem a testament to the human experience, capturing emotions, stories, and perspectives that transcend time and culture.</p> -->
         </div>
         <div class="col-3">
         </div>
@@ -54,7 +61,7 @@
     margin-left: 30rem;
    }
    @media screen and (max-width: 567px) {
-    .display-3{
+    .display-1{
       transform: rotate(0deg);
       margin-top: 1rem;
     }
