@@ -6,6 +6,7 @@ class Products{
         prodName, 
         prodQuantity,
         prodAmount,
+        ProdDescription,
         ProdUrl,
         userID
         FROM Products;
@@ -23,7 +24,8 @@ class Products{
         SELECT prodID, 
         prodName, 
         prodQuantity,
-        prodAmount, 
+        prodAmount,
+        ProdDescription, 
         ProdUrl,
         userID
         FROM Products
